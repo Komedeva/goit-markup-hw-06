@@ -45,8 +45,8 @@ body {
 .container {
   width: 100%;
   max-width: 320px;
-  padding-left: 15px;
-  padding-right: 15px;
+  padding-left: 16px;
+  padding-right: 16px;
   margin: 0 auto;
 }
 
@@ -352,6 +352,9 @@ body {
   background-color: #f4f4fd;
   padding-top: 120px;
   padding-bottom: 120px;
+  width: 100%;
+  max-width: 552px;
+  padding: 0 0;
 }
 
 .team-title {
@@ -372,8 +375,8 @@ team-title
   flex-wrap: wrap;
   row-gap: 72px;
   column-gap: 0;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 12px;
+  padding-right: 12px;
 }
 
 .team-member {
@@ -1008,6 +1011,7 @@ team-title
     justify-content: flex-start;
   }
 }
+
 /**DESKTOP**/
 @media screen and (min-width: 1440px) {
   .container {
@@ -1046,17 +1050,32 @@ team-title
   }
 
   /**SECTION 3**/
-  .team-title {
-    padding-top: 120px;
-    padding-bottom: 72px;
+  .team-cards .container {
+    max-width: 1158px;
+    margin: 0 auto;
   }
 
   .team-members {
-    gap: 24px;
-    display: flex;
+    column-gap: 24px;
   }
 
   .team-member {
-    width: calc((100% - 24px) / 4);
+    flex: 1 1 calc((100% - 72px) / 4);
+    max-width: calc((100% - 72px) / 4);
   }
+
+  /**SECTION 4**/
+  .work-item {
+    flex: 1 1 calc((100% - 24px) / 4);
+    max-width: calc((100% - 24px) / 4);
+  }
+
+  .all-works {
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+  }
+
+  /**FOOTER**/
 }
