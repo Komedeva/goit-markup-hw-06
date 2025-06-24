@@ -561,17 +561,21 @@ team-title
 
 .footer-box {
   background-color: #2e2f42;
-  padding-top: 100px;
-  padding-bottom: 100px;
+  padding-top: 96px;
+  padding-bottom: 96px;
+  /* padding-top: 100px;
+  padding-bottom: 100px; */
 }
 
-.footer-section {
+/* .footer-section {
   display: flex;
   align-items: baseline;
-}
+} */
 
 .logo-footer-text {
-  margin-right: 120px;
+  /* /* margin-right: 120px;* */
+  padding-bottom: 72px;
+  width: 288px;
 }
 
 .footer-text {
@@ -601,10 +605,14 @@ team-title
   color: #fff;
   margin-bottom: 16px;
 }
-
+/* 
 .footer-form {
   display: flex;
   gap: 24px;
+} */
+
+.social-media-footer {
+  padding-bottom: 72px;
 }
 
 /**ICONS FOOTER**/
@@ -699,11 +707,6 @@ team-title
   padding-top: 8px; */
 }
 
-.footer-form {
-  display: flex;
-  gap: 24px;
-}
-
 .footer-input-button-row {
   display: flex;
   gap: 8px;
@@ -711,6 +714,7 @@ team-title
 
 .footer-input {
   flex: 1;
+  margin-bottom: 16px;
 }
 
 .icon-subscribe {
