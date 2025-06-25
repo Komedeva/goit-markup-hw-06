@@ -10,6 +10,12 @@
   .main-table {
     padding-top: 112px;
     padding-bottom: 204;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-tablet.jpg);
   }
   .main-title {
     padding-left: 100px;
@@ -66,9 +72,9 @@
 }
 
 /**DESKTOP**/
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1158px) {
   .container {
-    max-width: 1440px;
+    max-width: 1158px;
     /* padding-left: 156px;
     padding-right: 156px; */
   }
@@ -81,7 +87,12 @@
   }
 
   .main-table {
-    width: 80%;
+    width: 100%;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/hero-desktop.jpg);
   }
 
   /**SECTION 2**/
@@ -98,6 +109,7 @@
   .features-list {
     display: flex;
     gap: 24px;
+    flex-wrap: nowrap;
   }
 
   .icon-benefits {
@@ -143,7 +155,7 @@
 
   /**FOOTER**/
   footer .container.footer-section {
-    max-width: 1440px;
+    max-width: 1158px;
     display: flex;
     align-items: baseline;
   }

@@ -236,7 +236,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office.jpg);
+    url(../images/hero-phone.jpg);
   padding-top: 72px;
   padding-bottom: 200px;
   max-width: 1440px;
@@ -357,7 +357,7 @@ body {
   padding-top: 120px;
   padding-bottom: 120px;
   width: 100%;
-  max-width: 552px;
+  /* max-width: 552px; */
   padding: 0 0;
 }
 
