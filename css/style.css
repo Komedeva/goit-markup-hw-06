@@ -69,13 +69,16 @@ body {
 
 .logo-header {
   margin-right: 76px;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 /* .accent {
 } */
 
 .navigation-links {
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -91,7 +94,8 @@ body {
 }
 
 .contacts-links {
-  display: flex;
+  /* display: flex; */
+  display: none;
   gap: 40px;
 }
 
@@ -245,6 +249,16 @@ body {
   background-size: cover;
   margin: 0 auto;
   /* width: 80%; */
+}
+
+@media screen and (min-resolution: 2x) {
+  .main-table {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/herophone-2x.jpg);
+  }
 }
 
 .main-title {

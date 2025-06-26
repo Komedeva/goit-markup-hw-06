@@ -17,6 +17,17 @@
       ),
       url(../images/hero-tablet.jpg);
   }
+
+  @media screen and (min-resolution: 2x) {
+    .main-table {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-tablet.jpg);
+    }
+  }
+
   .main-title {
     padding-left: 100px;
     padding-right: 100px;
@@ -79,6 +90,14 @@
     padding-right: 156px; */
   }
 
+  /**HEADER**/
+  .contacts-links {
+    display: flex;
+  }
+
+  .navigation-links {
+    display: flex;
+  }
   /**SECTION 1**/
   .main-title {
     font-size: 56px;
@@ -93,6 +112,16 @@
         rgba(46, 47, 66, 0.7)
       ),
       url(../images/hero-desktop.jpg);
+  }
+
+  @media screen and (min-resolution: 2x) {
+    .main-table {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/hero-desktop.jpg);
+    }
   }
 
   /**SECTION 2**/
