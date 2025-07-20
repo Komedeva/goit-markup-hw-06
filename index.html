@@ -55,6 +55,90 @@
             </li>
           </ul>
         </address>
+        <button type="button" class="menu-open-btn">
+          <svg class="icon-menu-open-btn" width="24" height="24">
+            <use href="./images/icons.svg#icon-menu-phone"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu">
+        <button type="button" class="mob-close-btn">
+          <svg class="mob-menu-close modal-close-icon" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="mob-info">
+          <nav class="mob-menu-navigation">
+            <ul class="mob-menu-navigation-links">
+              <li class="mob-menu-links-item">
+                <a href="#studio" class="mob-menu-link">Studio</a>
+              </li>
+              <li class="mob-menu-links-item">
+                <a href="#portfolio" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-links-item">
+                <a href="#contacts" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          <address class="mob-menu-contacts">
+            <ul class="mob-menu-contacts-links">
+              <li>
+                <a
+                  href="tel:+11(000)111-11-11"
+                  class="contacts-links-item links-item"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:info@devstudio.com"
+                  class="contacts-links-item links-item"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+        </div>
+
+        <div class="mob-menu-icons">
+          <!-- /**icons**/ -->
+          <ul class="mob-icons-list">
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -497,11 +581,11 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  class="portfolio-image"
-                  src="./images/portfolio/img9.jpg"
-                  alt="Taxi Service"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/portfolio/img9.jpg"
+                    alt="Taxi Service"
+                    width="360"
+                  />
                 </picture>
                 <p class="paste-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -542,11 +626,11 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  class="portfolio-image"
-                  src="./images/portfolio/img8.jpg"
-                  alt="Screen Illustrations"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/portfolio/img8.jpg"
+                    alt="Screen Illustrations"
+                    width="360"
+                  />
                 </picture>
                 <p class="paste-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -587,11 +671,11 @@
                     media="(min-width: 320px)"
                   />
                   <img
-                  class="portfolio-image"
-                  src="./images/portfolio/img10.jpg"
-                  alt="Online Courses"
-                  width="360"
-                />
+                    class="portfolio-image"
+                    src="./images/portfolio/img10.jpg"
+                    alt="Online Courses"
+                    width="360"
+                  />
                 </picture>
                 <p class="paste-cover-text">
                   14 Stylish and User-Friendly App Design Concepts · Task
@@ -655,32 +739,36 @@
           </ul>
         </div>
         <div class="footer-contacts-wrap">
-          <p class="social-text-form">Subscribe</p>
-          <form class="footer-form">
-            <label for="footer-email" class="label-form-footer">
-              <input
-                type="email"
-                class="footer-input"
-                name="footer-email"
-                id="footer-email"
-                placeholder="E-mail"
-              />
-            </label>
+          <div class="subscribe-wrap">
+            <p class="social-text-form">Subscribe</p>
+            <form class="footer-form">
+              <label for="footer-email" class="label-form-footer">
+                <input
+                  type="email"
+                  class="footer-input"
+                  name="footer-email"
+                  id="footer-email"
+                  placeholder="E-mail"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="container-footer-btn">
             <button type="submit" class="btn-footer-submit">
               Subscribe
               <svg width="24" height="24" class="icon-subscribe">
                 <use href="./images/icons.svg#icon-subscribe"></use>
               </svg>
             </button>
-          </form>
+          </div>
         </div>
       </div>
     </footer>
 
     <!-- /**MODAL**/ -->
-    <!-- <div class="backdrop">
-      is-open        клас, щоб відкрити модалку
-    <! <div class="modal">
+    <div class="backdrop">
+      <!-- is-open - клас, щоб відкрити модалку -->
+      <div class="modal">
         <button type="button" class="modal-close">
           <svg class="modal-close-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-cross"></use>
@@ -768,6 +856,6 @@
           </button>
         </form>
       </div>
-    </div> -->
+    </div>
   </body>
 </html>
