@@ -64,6 +64,7 @@ body {
 
 .container-header {
   display: flex;
+  align-items: center;
 }
 
 .navigation {
@@ -248,7 +249,8 @@ body {
   /**MOB-MENU**/
   .mob-menu,
   .mob-close-btn {
-    display: none; /*закрити меню моб*/
+    /* display: none; */
+    /**закрити меню моб**/
   }
 
   .mob-menu {
@@ -291,12 +293,16 @@ body {
     color: #2e2f42;
     transition: all 0.3 ease-in;
   }
+
+  .contacts-links-item {
+    margin-top: 168px;
+  }
+
   /* .mob-menu-contacts {
 }
 .mob-menu-contacts-links {
 }
-.contacts-links-item {
-}
+
 .links-item {
 }
 .mob-menu-social-icons-team {
@@ -325,15 +331,10 @@ body {
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
-  .mob-menu {
-    background: rgba(255, 0, 0, 0.2); /* червоний фон */
-  }
-
   .mob-menu-icons {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
-    flex-direction: row;
+    display: flex;
+    justify-content: start;
     gap: 40px;
   }
 }
@@ -346,7 +347,6 @@ body {
     ),
     url(../images/hero-phone.jpg);
   padding-top: 72px;
-  padding-bottom: 200px;
   max-width: 1440px;
   background-repeat: no-repeat;
   background-position: center;
@@ -374,12 +374,11 @@ body {
   text-align: center;
   color: #fff;
   margin-bottom: 48px;
-  max-width: 496px;
+  max-width: 216px;
   margin: 0 auto;
   font-size: 36px;
   line-height: 1.11111;
-  padding-left: 36px;
-  padding-right: 36px;
+  padding: 0px;
 }
 
 .section-title {
@@ -404,9 +403,9 @@ body {
   margin-bottom: 8px;
 }
 
-.section-subtitle.left {
+/* .section-subtitle.left {
   text-align: left;
-}
+} */
 
 .section-paragraph {
   font-weight: 400;
@@ -427,12 +426,20 @@ body {
   padding-bottom: 96px;
 }
 
+.section-subtitle {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+
 .features-list {
   display: flex;
   flex-wrap: wrap;
   /* padding-right: 156px;
   padding-left: 156px; desktop*/
-  padding-right: 16px;
   /* gap: 24px; desktop*/
   gap: 72px;
 }
@@ -469,6 +476,13 @@ body {
 
 .section-paragraph {
 } */
+@media screen and (max-width: 296px) {
+  .team-cards-section {
+    max-width: 296px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+  }
+}
 
 .team-cards {
   background-color: #f4f4fd;
@@ -480,9 +494,9 @@ body {
 }
 
 .team-title {
-  /* margin-bottom: 72px; */
-  padding-top: 96px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
+  padding-top: 72px;
+  color: #31d0aa;
 }
 
 /* 
@@ -497,8 +511,6 @@ team-title
   flex-wrap: wrap;
   row-gap: 72px;
   column-gap: 0;
-  padding-left: 12px;
-  padding-right: 12px;
 }
 
 .team-member {
@@ -507,6 +519,7 @@ team-title
   width: 100%;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
+  /* max-width: 264px; */
 }
 
 .team-member:last-child {
@@ -578,7 +591,6 @@ team-title
   gap: 24px;
   margin-top: 12px;
 }
-
 /**PORTFOLIO**/
 .portfolio {
   padding-top: 120px;
@@ -685,7 +697,7 @@ team-title
 
 .logo-footer-text {
   /* /* margin-right: 120px;* */
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   width: 288px;
 }
 
@@ -729,7 +741,7 @@ team-title
 } */
 
 .social-media-footer {
-  padding-bottom: 72px;
+  margin-bottom: 72px;
 }
 
 /**ICONS FOOTER**/
@@ -769,7 +781,7 @@ team-title
 .footer-input {
   border: 1px solid #ffffff;
   border-radius: 4px;
-  width: 264px;
+  width: 288px;
   height: 40px;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: transparent;
@@ -810,6 +822,9 @@ team-title
 }
 
 .btn-footer-submit {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   min-width: 165px;
   height: 40px;
   font-family: "Roboto", sans-serif;
@@ -869,8 +884,8 @@ team-title
 }
 
 .modal {
-  width: 408px;
-  min-height: 584px;
+  /* width: 408px;
+  min-height: 584px; */
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.14), 0 1px 3px 0 rgba(0, 0, 0, 0.12),
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background-color: #fcfcfc;
@@ -880,6 +895,9 @@ team-title
   left: 50%;
   transform: translate(-50%, -50%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 4px;
+  width: 288px;
+  height: 623px;
   padding: 72px 24px 24px 24px;
 }
 
