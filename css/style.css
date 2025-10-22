@@ -329,28 +329,33 @@ margin-bottom: auto;
   color: #434455;
 }
 
-    .icons {
-    stroke: #fff;
-    fill: #f4f4fd;
-  }
+.mob-menu-icons {
+  /* margin-top: auto; */
+  display: flex;
+  justify-content: center;
+}
 
-  .mob-icons-link {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    background-color: rgba(77, 90, 229, 1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  }
+.mob-icons-list {
+  display: flex;
+  gap: 40px;
+  padding: 0;
+  margin: 0;
+}
 
-  .mob-menu-icons {
-    display: flex;
-    gap: 40px;
-    display: flex;
-justify-content: space-between;
-align-items: flex-end;
+.mob-icons-link {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: rgba(77, 90, 229, 1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icons {
+  stroke: #fff;
+  fill: #f4f4fd;
 }
 
   /**MAIN TITLE**/
