@@ -55,95 +55,16 @@
             </li>
           </ul>
         </address>
-        <button type="button" class="menu-open-btn">
+        <button type="button" class="menu-open-btn" area-label="open menu label">
           <svg class="icon-menu-open-btn" width="24" height="24">
             <use href="./images/icons.svg#icon-menu-phone"></use>
           </svg>
         </button>
       </div>
-
-      <div class="mob-menu">
-        <button type="button" class="mob-close-btn">
-          <svg class="mob-menu-close modal-close-icon" width="8" height="8">
-            <use href="./images/icons.svg#icon-cross"></use>
-          </svg>
-        </button>
-
-        <div class="mob-info">
-          <nav class="mob-menu-navigation">
-            <ul class="mob-menu-navigation-links">
-              <li class="mob-menu-links-item">
-                <a href="#studio" class="mob-menu-link">Studio</a>
-              </li>
-              <li class="mob-menu-links-item">
-                <a href="#portfolio" class="mob-menu-link">Portfolio</a>
-              </li>
-              <li class="mob-menu-links-item">
-                <a href="#contacts" class="mob-menu-link">Contacts</a>
-              </li>
-            </ul>
-          </nav>
-          <address class="mob-menu-contacts">
-            <ul class="mob-menu-contacts-links">
-              <li>
-                <a
-                  href="tel:+11(000)111-11-11"
-                  class="contacts-links-item links-item"
-                  >+11 (000) 111-11-11
-                </a>
-              </li>
-              <li>
-                <a
-                  href="mailto:info@devstudio.com"
-                  class="contacts-links-item links-item"
-                  >info@devstudio.com
-                </a>
-              </li>
-            </ul>
-          </address>
-        </div>
-
-        <div class="mob-menu-icons">
-          <!-- /**icons**/ -->
-          <ul class="mob-icons-list">
-            <li class="social-icon-item mob-icon-item">
-              <a href="#" class="mob-icons-link">
-                <svg class="icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-insta"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-icon-item mob-icon-item">
-              <a href="#" class="mob-icons-link">
-                <svg class="icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-twitter"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-icon-item mob-icon-item">
-              <a href="#" class="mob-icons-link">
-                <svg class="icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-facebook"></use>
-                </svg>
-              </a>
-            </li>
-
-            <li class="social-icon-item mob-icon-item">
-              <a href="#" class="mob-icons-link">
-                <svg class="icons" width="24" height="24">
-                  <use href="./images/icons.svg#icon-linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
     <main>
       <!-- <-- SECTION 1 -->
-      <section class="main-table">
+      <section class="main-table hide">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="button-main-title" type="button">Order Service</button>
@@ -151,7 +72,7 @@
       </section>
 
       <!-- SECTION 2 -->
-      <section class="features">
+      <section class="features hide">
         <div class="container">
           <!-- Елемент відсутній на макеті, але потрібен для читалок та пошукових систем -->
           <h2 class="visually-hidden">Benefits</h2>
@@ -208,7 +129,7 @@
         </div>
       </section>
       <!-- SECTION 3 -->
-      <section class="team-cards">
+      <section class="team-cards hide">
         <div class="container team-cards-section>
           <h2 class="section-title capitalize team-title">Our Team</h2>
           <ul class="team-members">
@@ -410,7 +331,7 @@
       </section>
 
       <!-- SECTION 4 -->
-      <section class="portfolio">
+      <section class="portfolio hide">
         <div class="container">
           <h2 class="section-title portfolio-title capitalize">
             Our Portfolio
@@ -694,7 +615,7 @@
     </main>
 
     <!-- footer -->
-    <footer class="footer-box">
+    <footer class="footer-box hide">
       <div class="container footer-section">
         <div class="logo-footer-text">
           <a href="./index.html" class="logo-footer">
@@ -764,6 +685,90 @@
         </div>
       </div>
     </footer>
+
+    <!-- MOB-MENU -->
+      <div class="mob-menu is-open">
+      <div class="mob-menu-container">
+        <button type="button" class="mob-menu-close-btn">
+          <svg class="mob-menu-close-button" width="8" height="8">
+            <use href="./images/icons.svg#icon-cross"></use>
+          </svg>
+        </button>
+
+        <div class="mob-menu-info">
+          <nav class="mob-menu-navigation">
+            <ul class="mob-menu-navigation-links">
+              <li class="mob-menu-links-item">
+                <a href="#studio" class="mob-menu-link">Studio</a>
+              </li>
+              <li class="mob-menu-links-item">
+                <a href="#portfolio" class="mob-menu-link">Portfolio</a>
+              </li>
+              <li class="mob-menu-links-item">
+                <a href="#contacts" class="mob-menu-link">Contacts</a>
+              </li>
+            </ul>
+          </nav>
+          </div>
+
+          <div class="mob-menu-contacts">
+          <address>
+            <ul class="mob-menu-contacts-links">
+              <li class="contacts-links-mob-menu-item">
+                <a class="mob-menu-contact-link phone"
+                  href="tel:110001111111"
+                  >+11 (000) 111-11-11
+                </a>
+              </li>
+
+              <li class="contacts-links-mob-menu-item">
+                <a class="mob-menu-contact-link email"
+                  href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+          </div>
+
+        <div class="mob-menu-icons">
+          <!-- /**icons**/ -->
+          <ul class="mob-icons-list">
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-insta"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+
+            <li class="social-icon-item mob-icon-item">
+              <a href="#" class="mob-icons-link">
+                <svg class="icons" width="24" height="24">
+                  <use href="./images/icons.svg#icon-linkedin"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+        </div>
+      </div>
 
     <!-- /**MODAL**/ -->
     <div class="backdrop">

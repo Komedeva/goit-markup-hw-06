@@ -2,8 +2,7 @@
 @media screen and (min-width: 768px) {
   .container {
     max-width: 768px;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 0 16px;
   }
   .mob-menu,
   .menu-open-btn {
@@ -106,9 +105,9 @@
   /**SECTION FOOTER**/
 
   /**SECTION FOOTER**/
-  .footer-box {
-    /* padding: 96px; */
-  }
+  /* .footer-box { */
+  /* padding: 96px; */
+  /* } */
   .footer-section {
     display: flex;
     flex-wrap: wrap;
@@ -138,9 +137,7 @@
 /**DESKTOP**/
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1158px;
-    /* padding-left: 156px;
-    padding-right: 156px; */
+    max-width: 1128px;
   }
 
   /**HEADER**/
