@@ -4,6 +4,7 @@
     max-width: 768px;
     padding: 0 16px;
   }
+
   .mob-menu,
   .menu-open-btn {
     display: none;
@@ -29,7 +30,7 @@
   /**SECTION 1**/
   .main-table {
     padding-top: 112px;
-    padding-bottom: 204;
+    padding-bottom: 136px;
     width: 100%;
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
@@ -50,10 +51,16 @@
 
   .main-title {
     font-size: 56px;
-    line-height: 1.07143;
+    line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #fff;
+    margin-bottom: 36px;
+    max-width: 496px;
+  }
+
+  .button-main-title {
+    margin: 0px auto;
   }
 
   /**SECTION 2**/
@@ -140,6 +147,10 @@
     max-width: 1128px;
   }
 
+  .mob-menu,
+  .menu-open-btn {
+    display: none;
+  }
   /**HEADER**/
   .contacts-links {
     display: flex;
@@ -193,6 +204,10 @@
     display: flex;
     gap: 24px;
     flex-wrap: nowrap;
+
+    /* padding-right: 156px;
+  padding-left: 156px; desktop*/
+    /* gap: 24px; desktop*/
   }
 
   .icon-benefits {
