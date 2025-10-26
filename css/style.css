@@ -433,15 +433,6 @@ body {
   padding-bottom: 96px;
 }
 
-.section-subtitle {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.11111;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #2e2f42;
-}
-
 .features-list {
   display: flex;
   flex-wrap: wrap;
@@ -451,9 +442,6 @@ body {
 .features-list:last-child {
   margin-right: 0;
 }
-
-/* .features-list:first-child {
-} */
 
 .features-item {
   width: 100%;
@@ -494,7 +482,7 @@ body {
 .team-cards-section .section-title {
   font-weight: 700;
   font-size: 36px;
-  line-height: 1.11111;
+  line-height: 1.11;
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
@@ -505,7 +493,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   row-gap: 72px;
-  column-gap: 0;
+  column-gap: 24px;
   justify-content: center;
 }
 
@@ -594,6 +582,12 @@ body {
 
 .portfolio-title {
   margin-bottom: 72px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
 }
 
 .about-description {
@@ -937,7 +931,7 @@ body {
   letter-spacing: 0.02em;
   text-align: center;
   color: #2e2f42;
-  width: 360px;
+  width: 256px;
   margin-bottom: 16px;
 }
 
