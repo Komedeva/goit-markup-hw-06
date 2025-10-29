@@ -141,7 +141,7 @@
 /**DESKTOP**/
 @media screen and (min-width: 1158px) {
   .container {
-    max-width: 1128px;
+    max-width: 1158px;
   }
 
   .mob-menu,
@@ -151,8 +151,6 @@
   /**HEADER**/
   .contacts-links {
     display: flex;
-    /* flex-direction: column;
-    align-items: flex-start; */
     gap: 40px;
     flex-direction: row;
   }
